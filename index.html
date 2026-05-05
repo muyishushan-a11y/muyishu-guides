@@ -246,6 +246,97 @@
         }
         @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
 
+        /* FREE SAMPLES SECTION (Complementary) */
+        .free-section {
+            padding: 5rem 2rem;
+            text-align: center;
+            background: linear-gradient(180deg, var(--bg-dark) 0%, #1a140a 100%);
+        }
+        .free-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            max-width: 1100px;
+            margin: 2.5rem auto 0;
+        }
+        @media (max-width: 768px) { .free-grid { grid-template-columns: 1fr; } }
+        .free-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 2rem 1.5rem;
+            text-align: left;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .free-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(201,168,76,0.15);
+        }
+        .free-icon {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 0.8rem;
+        }
+        .free-card h3 {
+            color: var(--gold);
+            font-size: 1.05rem;
+            font-weight: 600;
+            margin-bottom: 0.6rem;
+            line-height: 1.4;
+        }
+        .free-card p {
+            color: var(--text-muted);
+            font-size: 0.88rem;
+            line-height: 1.55;
+            margin-bottom: 0.8rem;
+        }
+        .free-includes {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 1.2rem;
+        }
+        .free-includes li {
+            color: var(--text-light);
+            font-size: 0.85rem;
+            padding: 0.25rem 0;
+            position: relative;
+            padding-left: 1.2rem;
+        }
+        .free-includes li::before {
+            content: "✦";
+            color: var(--gold);
+            position: absolute;
+            left: 0;
+            font-size: 0.75rem;
+        }
+        .free-btn {
+            display: inline-block;
+            background: transparent;
+            color: var(--gold);
+            border: 1px solid var(--gold);
+            padding: 0.6rem 1.3rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.88rem;
+            transition: all 0.2s;
+            width: 100%;
+            text-align: center;
+        }
+        .free-btn:hover {
+            background: var(--gold);
+            color: var(--bg-dark);
+        }
+        .free-note {
+            color: var(--text-muted);
+            font-size: 0.82rem;
+            margin-top: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 0.8;
+        }
+
         /* PRODUCTS */
         .products-section {
             padding: 6rem 2rem;
@@ -409,9 +500,15 @@
         }
         .features-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 2rem;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
             margin-top: 3rem;
+        }
+        @media (max-width: 768px) {
+            .features-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 480px) {
+            .features-grid { grid-template-columns: 1fr; }
         }
         .feature-item {
             text-align: center;
@@ -580,6 +677,52 @@
             <span>Real Chinese Cooking</span>
         </div>
     </div>
+
+    <!-- FREE SAMPLES (Complementary, not competing) -->
+    <section class="free-section" id="free">
+        <div class="section-label">Free Samples</div>
+        <h2 class="section-title">Try Before You Buy <span class="chinese">🎁</span></h2>
+        <p class="section-subtitle">Get a taste of our guides. These free samples complement — they don't replace the full versions.</p>
+        <div class="free-grid">
+            <!-- Free Sample 1: Tea Mistakes (complements Chinese Tea Guide) -->
+            <div class="free-card fade-in">
+                <div class="free-icon">🍵</div>
+                <h3>7 Tea Brewing Mistakes Most Beginners Make</h3>
+                <p>Are you ruining your tea without knowing it? Discover the 7 most common mistakes — and why the full guide has all the <em>right</em> answers.</p>
+                <ul class="free-includes">
+                    <li>The #1 mistake that makes tea bitter</li>
+                    <li>Why water temperature matters more than you think</li>
+                    <li>How steeping time changes everything</li>
+                </ul>
+                <a href="https://muyishu.gumroad.com/l/dwomg" class="free-btn">Get Full Tea Guide →</a>
+            </div>
+            <!-- Free Sample 2: Chinese Name Quiz (complements Name Guide) -->
+            <div class="free-card fade-in">
+                <div class="free-icon">🈵</div>
+                <h3>Is Your Chinese Name Actually Good?</h3>
+                <p>A quick self-check guide to spot red flags in machine-translated names. The full guide gives you a name that's genuinely meaningful.</p>
+                <ul class="free-includes">
+                    <li>3 signs your name is a bad translation</li>
+                    <li>Why Google Translate fails at names</li>
+                    <li>What a real Chinese name should include</li>
+                </ul>
+                <a href="https://muyishu.gumroad.com/l/hiieie" class="free-btn">Get Your Real Name →</a>
+            </div>
+            <!-- Free Sample 3: Feng Shui Quiz (complements Feng Shui Kit) -->
+            <div class="free-card fade-in">
+                <div class="free-icon">☯</div>
+                <h3>Your Room's Feng Shui Score: Quick Audit</h3>
+                <p>A 2-minute room audit checklist. Find out your space's Feng Shui score — then use the full kit to fix what's broken.</p>
+                <ul class="free-includes">
+                    <li>5-point quick scoring system</li>
+                    <li>The #1 Feng Shui violation in most homes</li>
+                    <li>One change that improves energy flow instantly</li>
+                </ul>
+                <a href="https://muyishu.gumroad.com/l/mdnmj" class="free-btn">Get Full Feng Shui Kit →</a>
+            </div>
+        </div>
+        <p class="free-note">All free samples are web-based. Full guides include downloadable PDFs with complete content, worksheets, and reference charts.</p>
+    </section>
 
     <!-- PRODUCTS -->
     <section class="products-section" id="products">
