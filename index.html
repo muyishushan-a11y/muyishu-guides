@@ -642,7 +642,7 @@
         
         <div class="hero-social-proof" style="position:relative; z-index:1;">
             <span class="chinese" style="font-size:1.3rem; color: var(--gold);">信</span>
-            <span>Authentic, research-driven content</span>
+            <span>Authentic Chinese culture, thoroughly researched</span>
         </div>
         
         <div class="hero-cta">
@@ -966,6 +966,16 @@
     </script>
     <!-- Snipcart JS -->
     <script async src="https://cdn.snipcart.com/themes/v3.4.1/default/snipcart.js"></script>
-    <div id="snipcart" data-config-modal-style="side" data-api-key="V2VjODkxMDItODQ4Mi0xYmQzLTkyMTktMDgwMDEtNDc5YjdmOTZhZmUxXzEwMDAwLlJYWEdMSU5FWF8xNTkzOA==" data-currency="USD" data-config-add-product-behavior="none"></div>
+    <div id="snipcart" data-config-modal-style="side" data-api-key="V2VjODkxMDItODQ4Mi0xYmQzLTkyMTktMDgwMDEtNDc5YjdmOTZhZmUxXzEwMDAwLlJYWEdMSU5FWF8xNTkzOA==" data-currency="USD" data-config-add-product-behavior="none" data-config-domain="muyishushan-a11y.github.io"></div>
+    <script>
+        // Debug Snipcart loading
+        window.addEventListener('load', function() {
+            if (typeof Snipcart !== 'undefined') {
+                console.log('Snipcart loaded successfully');
+            } else {
+                console.error('Snipcart failed to load');
+            }
+        });
+    </script>
 </body>
 </html>
