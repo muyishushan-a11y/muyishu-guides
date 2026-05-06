@@ -122,12 +122,13 @@
             content: '文';
             position: absolute;
             font-size: 40vw;
-            opacity: 0.02;
+            opacity: 0.03;
             font-family: 'Noto Serif SC', serif;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
             pointer-events: none;
+            z-index: 0;
         }
         .hero-badge {
             display: inline-block;
@@ -639,7 +640,7 @@
         <h1>Discover the Beauty of <span>Chinese Culture</span></h1>
         <p class="hero-subtitle">Premium, carefully crafted guides for English speakers who want to understand Chinese culture, language, and traditions — from the comfort of home.</p>
         
-        <div class="hero-social-proof">
+        <div class="hero-social-proof" style="position:relative; z-index:1;">
             <span class="chinese" style="font-size:1.3rem; color: var(--gold);">信</span>
             <span>Authentic, research-driven content</span>
         </div>
@@ -965,6 +966,6 @@
     </script>
     <!-- Snipcart JS -->
     <script async src="https://cdn.snipcart.com/themes/v3.4.1/default/snipcart.js"></script>
-    <div id="snipcart" data-config-modal-style="side" data-api-key="ZmZhNWRjYjUtMWMyOC00ODgzLTg3ZGYtZT0tMWRjNDowN2RmNjM5MTM2NjU4MDIzMzg2MTMz" data-currency="USD" data-config-add-product-behavior="none"></div>
+    <div id="snipcart" data-config-modal-style="side" data-api-key="V2VjODkxMDItODQ4Mi0xYmQzLTkyMTktMDgwMDEtNDc5YjdmOTZhZmUxXzEwMDAwLlJYWEdMSU5FWF8xNTkzOA==" data-currency="USD" data-config-add-product-behavior="none"></div>
 </body>
 </html>
