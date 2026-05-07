@@ -14,15 +14,13 @@
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://muyishushan-a11y.github.io/muyishu-guides/">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Snipcart CSS -->
-    <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.4.1/default/snipcart.css" />
-    <!-- Google Analytics - G-MM5TQXR7R0 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MM5TQXR7R0"></script>
+    <!-- Google Analytics - G-MM8T0X7P80 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MM8T0X7P80"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'G-MM5TQXR7R0');
+      gtag('config', 'G-MM8T0X7P80');
     </script>
     <style>
         :root {
@@ -427,12 +425,12 @@
             object-fit: cover;
             display: block;
         }
-        .product-img.chinese-bg-1 { background-image: url('https://images.unsplash.com/photo-1545989253-02cc26577f88?w=600&q=80'); }
-        .product-img.chinese-bg-2 { background-image: url('https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=600&q=80'); }
-        .product-img.chinese-bg-3 { background-image: url('https://images.unsplash.com/photo-1582793988951-9aed5509eb97?w=600&q=80'); }
-        .product-img.chinese-bg-4 { background-image: url('https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=600&q=80'); }
-        .product-img.chinese-bg-5 { background-image: url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&q=80'); }
-        .product-img.chinese-bg-6 { background-image: url('https://images.unsplash.com/photo-1499638673689-79a0b5115d87?w=600&q=80'); }
+        .product-img.chinese-bg-1 { background: linear-gradient(135deg, #8B2323 0%, #5C1616 100%); }
+        .product-img.chinese-bg-2 { background: linear-gradient(135deg, #2D5016 0%, #1a2f0a 100%); }
+        .product-img.chinese-bg-3 { background: linear-gradient(135deg, #4A6741 0%, #2d3d28 100%); }
+        .product-img.chinese-bg-4 { background: linear-gradient(135deg, #1a3a5c 0%, #0d1f30 100%); }
+        .product-img.chinese-bg-5 { background: linear-gradient(135deg, #5c3a6e 0%, #3a2447 100%); }
+        .product-img.chinese-bg-6 { background: linear-gradient(135deg, #8B4513 0%, #5a2d0a 100%); }
         .product-icon {
             font-size: 4rem;
             line-height: 1;
@@ -645,9 +643,9 @@
     <!-- HERO -->
     <section class="hero">
         <div style="position:absolute; top:1rem; right:1.5rem; z-index:100;">
-            <button class="snipcart-checkout" style="background:var(--gold); color:#1a1a2e; border:none; border-radius:50px; padding:0.6rem 1.4rem; font-weight:700; cursor:pointer; font-size:0.95rem; display:flex; align-items:center; gap:0.5rem; box-shadow:0 2px 12px rgba(212,175,55,0.4);">
-                🛒 Cart (<span class="snipcart-total-items-count">0</span>)
-            </button>
+            <a href="https://muyishu.gumroad.com" style="background:var(--gold); color:#1a1a2e; border:none; border-radius:50px; padding:0.6rem 1.4rem; font-weight:700; cursor:pointer; font-size:0.95rem; display:inline-flex; align-items:center; gap:0.5rem; box-shadow:0 2px 12px rgba(212,175,55,0.4); text-decoration:none;">
+                🛒 Visit Store
+            </a>
         </div>
         <div class="hero-badge">Authentic Chinese Culture</div>
         <h1>Discover the Beauty of <span>Chinese Culture</span></h1>
@@ -753,132 +751,96 @@
         <div class="products-grid">
             <!-- Product 1: Chinese Name Guide -->
             <div class="product-card fade-in">
-                <div class="product-img chinese-bg-1"></div>
+                <div class="product-img chinese-bg-1" style="display:flex;align-items:center;justify-content:center;">
+                    <span class="product-icon">📛</span>
+                </div>
                 <div class="product-body">
                     <span class="product-tag">Most Popular</span>
                     <h3 class="product-title">The Authentic Chinese Name Guide</h3>
                     <p class="product-desc">100+ authentic names by personality &amp; profession, surname compatibility, pronunciation guide, and cultural taboos to avoid.</p>
                     <div class="product-footer">
                         <span class="product-price">$14.99</span>
-                        <button class="snipcart-add-item product-link"
-                            data-item-id="chinese-name-guide"
-                            data-item-name="The Authentic Chinese Name Guide"
-                            data-item-price="14.99"
-                            data-item-url="/muyishu-guides/"
-                            data-item-description="100+ authentic names by personality & profession, surname compatibility, pronunciation guide, and cultural taboos."
-                            data-item-image="https://muyishushan-a11y.github.io/muyishu-guides/og-image.png">
-                            Add to Cart 🛒
-                        </button>
+                        <a href="https://muyishu.gumroad.com/l/chinese-name-guide" class="product-link">Buy Now 🛒</a>
                     </div>
                 </div>
             </div>
 
             <!-- Product 2: Feng Shui -->
             <div class="product-card fade-in">
-                <div class="product-img chinese-bg-2"></div>
+                <div class="product-img chinese-bg-2" style="display:flex;align-items:center;justify-content:center;">
+                    <span class="product-icon">☯</span>
+                </div>
                 <div class="product-body">
                     <span class="product-tag">Lifestyle</span>
                     <h3 class="product-title">Feng Shui Starter Kit</h3>
                     <p class="product-desc">Room-by-room guides, 5 Elements &amp; Bagua Map, home office Feng Shui, layout problem solutions, and 10 quick wins you can apply today.</p>
                     <div class="product-footer">
                         <span class="product-price">$12.99</span>
-                        <button class="snipcart-add-item product-link"
-                            data-item-id="feng-shui-starter-kit"
-                            data-item-name="Feng Shui Starter Kit"
-                            data-item-price="12.99"
-                            data-item-url="/muyishu-guides/"
-                            data-item-description="Room-by-room guides, 5 Elements & Bagua Map, home office Feng Shui, layout solutions, and 10 quick wins."
-                            data-item-image="https://muyishushan-a11y.github.io/muyishu-guides/og-image.png">
-                            Add to Cart 🛒
-                        </button>
+                        <a href="https://muyishu.gumroad.com/l/feng-shui-starter-kit" class="product-link">Buy Now 🛒</a>
                     </div>
                 </div>
             </div>
 
             <!-- Product 3: Chinese Tea -->
             <div class="product-card fade-in">
-                <div class="product-img chinese-bg-3"></div>
+                <div class="product-img chinese-bg-3" style="display:flex;align-items:center;justify-content:center;">
+                    <span class="product-icon">🍵</span>
+                </div>
                 <div class="product-body">
                     <span class="product-tag">Culture</span>
                     <h3 class="product-title">Chinese Tea for Beginners</h3>
                     <p class="product-desc">6 tea types, gongfu brewing guide, tea ware buying guide, storage methods, and scam avoidance. From leaf to cup.</p>
                     <div class="product-footer">
                         <span class="product-price">$9.99</span>
-                        <button class="snipcart-add-item product-link"
-                            data-item-id="chinese-tea-beginners"
-                            data-item-name="Chinese Tea for Beginners"
-                            data-item-price="9.99"
-                            data-item-url="/muyishu-guides/"
-                            data-item-description="6 tea types, gongfu brewing guide, tea ware buying guide, storage methods, and scam avoidance."
-                            data-item-image="https://muyishushan-a11y.github.io/muyishu-guides/og-image.png">
-                            Add to Cart 🛒
-                        </button>
+                        <a href="https://muyishu.gumroad.com/l/chinese-tea-beginners" class="product-link">Buy Now 🛒</a>
                     </div>
                 </div>
             </div>
 
             <!-- Product 4: Survival Chinese -->
             <div class="product-card fade-in">
-                <div class="product-img chinese-bg-4"></div>
+                <div class="product-img chinese-bg-4" style="display:flex;align-items:center;justify-content:center;">
+                    <span class="product-icon">🌏</span>
+                </div>
                 <div class="product-body">
                     <span class="product-tag">Language</span>
                     <h3 class="product-title">Survival Chinese: 200 Essential Phrases</h3>
                     <p class="product-desc">The 200 most useful Chinese phrases for travelers and beginners. Organized by situation: dining, shopping, transportation, emergencies, and more.</p>
                     <div class="product-footer">
                         <span class="product-price">$11.99</span>
-                        <button class="snipcart-add-item product-link"
-                            data-item-id="survival-chinese-200-phrases"
-                            data-item-name="Survival Chinese: 200 Essential Phrases"
-                            data-item-price="11.99"
-                            data-item-url="/muyishu-guides/"
-                            data-item-description="The 200 most useful Chinese phrases for travelers and beginners. Organized by situation."
-                            data-item-image="https://muyishushan-a11y.github.io/muyishu-guides/og-image.png">
-                            Add to Cart 🛒
-                        </button>
+                        <a href="https://muyishu.gumroad.com/l/survival-chinese" class="product-link">Buy Now 🛒</a>
                     </div>
                 </div>
             </div>
 
             <!-- Product 5: Zodiac Love -->
             <div class="product-card fade-in">
-                <div class="product-img chinese-bg-5"></div>
+                <div class="product-img chinese-bg-5" style="display:flex;align-items:center;justify-content:center;">
+                    <span class="product-icon">💎</span>
+                </div>
                 <div class="product-body">
                     <span class="product-tag">Relationships</span>
                     <h3 class="product-title">Chinese Zodiac Love Compatibility Guide</h3>
                     <p class="product-desc">Discover how the 12 Chinese zodiac signs interact in love. Includes pairing scores, relationship dynamics, and tips for each combination.</p>
                     <div class="product-footer">
                         <span class="product-price">$9.99</span>
-                        <button class="snipcart-add-item product-link"
-                            data-item-id="zodiac-love-compatibility"
-                            data-item-name="Chinese Zodiac Love Compatibility Guide"
-                            data-item-price="9.99"
-                            data-item-url="/muyishu-guides/"
-                            data-item-description="Discover how the 12 Chinese zodiac signs interact in love. Includes pairing scores and relationship tips."
-                            data-item-image="https://muyishushan-a11y.github.io/muyishu-guides/og-image.png">
-                            Add to Cart 🛒
-                        </button>
+                        <a href="https://muyishu.gumroad.com/l/zodiac-love-compatibility" class="product-link">Buy Now 🛒</a>
                     </div>
                 </div>
             </div>
 
             <!-- Product 6: Real Chinese Cooking -->
             <div class="product-card fade-in">
-                <div class="product-img chinese-bg-6"></div>
+                <div class="product-img chinese-bg-6" style="display:flex;align-items:center;justify-content:center;">
+                    <span class="product-icon">🥘</span>
+                </div>
                 <div class="product-body">
                     <span class="product-tag">Cooking</span>
                     <h3 class="product-title">Real Chinese Cooking at Home</h3>
                     <p class="product-desc">20 restaurant favorites with wok guide, sauce variations matrix, prep timeline for dinner parties, and complete ingredient substitution table.</p>
                     <div class="product-footer">
                         <span class="product-price">$12.99</span>
-                        <button class="snipcart-add-item product-link"
-                            data-item-id="real-chinese-cooking"
-                            data-item-name="Real Chinese Cooking at Home"
-                            data-item-price="12.99"
-                            data-item-url="/muyishu-guides/"
-                            data-item-description="20 restaurant favorites with wok guide, sauce variations matrix, prep timeline, and ingredient substitutions."
-                            data-item-image="https://muyishushan-a11y.github.io/muyishu-guides/og-image.png">
-                            Add to Cart 🛒
-                        </button>
+                        <a href="https://muyishu.gumroad.com/l/real-chinese-cooking" class="product-link">Buy Now 🛒</a>
                     </div>
                 </div>
             </div>
@@ -964,18 +926,6 @@
         }, { threshold: 0.1 });
         document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
     </script>
-    <!-- Snipcart JS -->
-    <script async src="https://cdn.snipcart.com/themes/v3.4.1/default/snipcart.js"></script>
-    <div id="snipcart" data-config-modal-style="side" data-api-key="V2VjODkxMDItODQ4Mi0xYmQzLTkyMTktMDgwMDEtNDc5YjdmOTZhZmUxXzEwMDAwLlJYWEdMSU5FWF8xNTkzOA==" data-currency="USD" data-config-add-product-behavior="go-to-cart" data-config-domain="app.snipcart.com"></div>
-    <script>
-        // Debug Snipcart loading
-        window.addEventListener('load', function() {
-            if (typeof Snipcart !== 'undefined') {
-                console.log('Snipcart loaded successfully');
-            } else {
-                console.error('Snipcart failed to load');
-            }
-        });
-    </script>
+    <!-- Snipcart JS removed — using Gumroad direct links -->
 </body>
 </html>
